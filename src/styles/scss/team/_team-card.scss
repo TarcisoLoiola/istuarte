@@ -1,0 +1,46 @@
+.ia-team-container-grid{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(auto);
+    grid-column-gap: 20px;
+    padding-top: 10px;
+    color: $darkBrown;
+}
+
+.ia-team-container-card{
+    display: block;
+    padding: 10px;
+    border: 1px solid $lightGrey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px $darkGrey;
+    text-align: center;
+    cursor: pointer;
+}
+.ia-team-container-card{
+    h3{
+       margin: 0; 
+    }
+    p{
+        margin: 0; 
+     }
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
+}
+
+.ia-team-container-card:hover{
+    box-shadow: 1.5px 1.5px 5px $darkGrey;
+}
+
+.ia-team-container-body{
+    display: block;
+    grid-column: 1/6;
+    grid-row: 11;
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid $lightGrey;
+    
+}
