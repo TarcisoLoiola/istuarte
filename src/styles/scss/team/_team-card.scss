@@ -10,6 +10,7 @@
 .ia-team-container-card{
     display: block;
     padding: 10px;
+    background: $clrBrown;
     border: 1px solid $lightGrey;
     border-radius: 10px;
     box-shadow: 1px 1px 5px $darkGrey;
@@ -27,6 +28,8 @@
         height: 100px;
         width: 100px;
         border-radius: 50px;
+        // border: .5px solid $lightGrey;
+        box-shadow: 1px 1px 5px $darkGrey, -1px -1px 5px $darkGrey;
     }
 }
 

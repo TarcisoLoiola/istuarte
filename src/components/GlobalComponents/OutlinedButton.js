@@ -9,13 +9,13 @@ class OutlinedButton extends Component {
         type: 'submit'
       })`
         display: block; ${ props => props.center ? 'margin: 0 auto;' : props => props.right ? 'float: right' : ''  }
-        height: ${ props => props.tall ? '50px' : props.avar ? '40px' : '30px' }
+        height: ${ props => props.tall ? '50px' : props.mid ? '40px' : '30px' }
         width: ${ props => props.large ? '100%' : props.medium ? '150px' : '100px' }
         text-transform: uppercase
-        font-size: 1.2rem
+        font-size: 1rem
         outline: none
         color: #B33F01
-        border: solid 2px #B33F01
+        border: solid 1px #B33F01
         cursor: pointer
         `
         return(
@@ -24,7 +24,7 @@ class OutlinedButton extends Component {
                 center = { this.props.center }
                 right = { this.props.right }
                 tall = { this.props.tall }
-                avar = { this.props.avar }
+                mid = { this.props.mid }
                 large = { this.props.large }
                 medium = { this.props.medium }
             />

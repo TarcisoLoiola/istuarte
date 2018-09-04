@@ -1,0 +1,28 @@
+.ia-about-us{
+    display: block;
+    width: $medium;
+    margin: 0 auto;
+}
+
+.ia-about-us-container-grid{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:0 20px 10px 20px; 
+    border: 1px solid $lightBrown;
+    background: $clrBrown;
+    color: $darkBrown;
+}
+
+.ia-about-us-container-grid{
+    p{
+        font-size: 1.4rem;
+    }
+    a{
+        display: block;
+        padding-bottom: 10px;
+        text-decoration-line: none;
+        color: $darkBrown;
+        font-size: 1.4rem;
+        font-weight: bold;
+     }
+}

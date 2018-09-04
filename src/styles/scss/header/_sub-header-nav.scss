@@ -6,10 +6,13 @@
     
 }
 
-.ia-subheadernav-menu-list > a{
+.ia-subheadernav-menu-list{
     justify-self: center;
-    color: $darkBrown;
     font-size: 1.4rem;
+}
+
+.ia-subheadernav-menu-list > a{
+    color: $darkBrown;
     text-decoration-line: none;
 }
 

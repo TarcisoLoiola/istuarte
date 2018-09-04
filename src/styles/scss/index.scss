@@ -1,5 +1,10 @@
 body{
     font-family: 'Poiret One', cursive;
+
+    hr{
+        border-color: #d5c1b6;
+        background: #d5c1b6;
+    }
 }
 
 @import './variables';
@@ -11,3 +16,6 @@ body{
 
 @import './team/team';
 @import './team/team-card';
+
+@import './about-us/about-us';
+@import './about-us/contact-us';

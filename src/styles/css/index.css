@@ -1,6 +1,10 @@
 body {
   font-family: "Poiret One", cursive;
 }
+body hr {
+  border-color: #d5c1b6;
+  background: #d5c1b6;
+}
 
 .ia-header {
   display: block;
@@ -34,10 +38,13 @@ body {
   padding-top: 20px;
 }
 
-.ia-subheadernav-menu-list > a {
+.ia-subheadernav-menu-list {
   justify-self: center;
-  color: #B33F01;
   font-size: 1.4rem;
+}
+
+.ia-subheadernav-menu-list > a {
+  color: #B33F01;
   text-decoration-line: none;
 }
 
@@ -79,6 +86,7 @@ body {
 .ia-team-container-card {
   display: block;
   padding: 10px;
+  background: #fffbf9;
   border: 1px solid #95989a;
   border-radius: 10px;
   box-shadow: 1px 1px 5px #666666;
@@ -96,6 +104,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50px;
+  box-shadow: 1px 1px 5px #666666, -1px -1px 5px #666666;
 }
 
 .ia-team-container-card:hover {
@@ -110,6 +119,48 @@ body {
   width: 100%;
   margin-top: 20px;
   border: 1px solid #95989a;
+}
+
+.ia-about-us {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ia-about-us-container-grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px 10px 20px;
+  border: 1px solid #d5c1b6;
+  background: #fffbf9;
+  color: #B33F01;
+}
+
+.ia-about-us-container-grid p {
+  font-size: 1.4rem;
+}
+.ia-about-us-container-grid a {
+  display: block;
+  padding-bottom: 10px;
+  text-decoration-line: none;
+  color: #B33F01;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.ia-contact-us {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+  color: #B33F01;
+}
+
+.ia-contact-us-container-grid {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #d5c1b6;
+  background: #fffbf9;
+  color: #B33F01;
 }
 
 /*# sourceMappingURL=index.css.map */
