@@ -1,0 +1,24 @@
+.ia-header{
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.ia-header-name-container-grid{
+    display: grid;
+}
+
+.ia-header-name-container{
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 5vh;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.ia-header-name-container .ia-header-name-container-link{
+    color: $darkBrown;
+    font-size: 2.8rem;
+    text-decoration-line: none;
+}

@@ -1,0 +1,34 @@
+.ia-subheadernav-container-grid{
+    display: grid;
+    grid-template-columns: repeat(6, auto );
+    grid-template-rows: repeat(auto);
+    padding-top: 20px;
+    
+}
+
+.ia-subheadernav-menu-list > a{
+    justify-self: center;
+    color: $darkBrown;
+    font-size: 1.4rem;
+    text-decoration-line: none;
+}
+
+.ia-subheadernav-menu-container .home{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ia-subheadernav-menu-container .team{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ia-subheadernav-menu-container .calendar{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.ia-subheadernav-menu-container .about-us{
+    grid-column: 4;
+    grid-row: 1;
+}

@@ -1,0 +1,64 @@
+body {
+  font-family: "Poiret One", cursive;
+}
+
+.ia-header {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ia-header-name-container-grid {
+  display: grid;
+}
+
+.ia-header-name-container {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 5vh;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.ia-header-name-container .ia-header-name-container-link {
+  color: #B33F01;
+  font-size: 2.8rem;
+  text-decoration-line: none;
+}
+
+.ia-subheadernav-container-grid {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(auto);
+  padding-top: 20px;
+}
+
+.ia-subheadernav-menu-list > a {
+  justify-self: center;
+  color: #B33F01;
+  font-size: 1.4rem;
+  text-decoration-line: none;
+}
+
+.ia-subheadernav-menu-container .home {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ia-subheadernav-menu-container .team {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.ia-subheadernav-menu-container .calendar {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.ia-subheadernav-menu-container .about-us {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
