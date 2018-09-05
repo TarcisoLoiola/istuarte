@@ -121,13 +121,25 @@ body hr {
   border: 1px solid #95989a;
 }
 
+.ia-about-contact-grid {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+
 .ia-about-us {
   display: block;
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  left: 0;
   width: 90vw;
   margin: 0 auto;
+  transition: left 0.4s ease;
 }
 
 .ia-about-us-container-grid {
+  display: block;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0 20px 10px 20px;
@@ -136,10 +148,16 @@ body hr {
   color: #B33F01;
 }
 
-.ia-about-us-container-grid p {
-  font-size: 1.4rem;
+.slide-about-true {
+  left: 1920px;
 }
-.ia-about-us-container-grid a {
+
+.ia-about-us p {
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.ia-about-us a {
   display: block;
   padding-bottom: 10px;
   text-decoration-line: none;
@@ -147,20 +165,60 @@ body hr {
   font-size: 1.4rem;
   font-weight: bold;
 }
+.ia-about-us .contact-us {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 .ia-contact-us {
   display: block;
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  left: -1920px;
   width: 90vw;
   margin: 0 auto;
-  color: #B33F01;
+  transition: left 0.4s ease;
+}
+
+.slide-contact-true {
+  left: 0;
 }
 
 .ia-contact-us-container-grid {
+  display: block;
+  margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   border: 1px solid #d5c1b6;
   background: #fffbf9;
   color: #B33F01;
+}
+
+.ia-contact-us-input label {
+  display: block;
+  width: 100%;
+}
+
+.ia-contact-us-submit {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ia-contact-us-submit:active {
+  color: #FFFFFF;
+  background: #B33F01;
+}
+
+.ia-contact-us .about-us {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

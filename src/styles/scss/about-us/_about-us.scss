@@ -1,28 +1,55 @@
+.ia-about-contact-grid{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+
+
 .ia-about-us{
     display: block;
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    left: 0;
     width: $medium;
     margin: 0 auto;
+    transition: left .4s ease;
 }
 
 .ia-about-us-container-grid{
+    display: block;
     margin-top: 20px;
     margin-bottom: 20px;
     padding:0 20px 10px 20px; 
     border: 1px solid $lightBrown;
     background: $clrBrown;
     color: $darkBrown;
+    
 }
 
-.ia-about-us-container-grid{
+.slide-about-true{
+    left: 1920px;
+}
+
+.ia-about-us{
     p{
         font-size: 1.4rem;
+        text-align: justify;
+        text-justify: inter-word;
     }
     a{
         display: block;
         padding-bottom: 10px;
         text-decoration-line: none;
         color: $darkBrown;
-        font-size: 1.4rem;
+        font-size: $mediumFont;
         font-weight: bold;
-     }
+    }
+    .contact-us{
+        display: block;
+        padding-bottom: 10px;
+        font-size: $mediumFont;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }

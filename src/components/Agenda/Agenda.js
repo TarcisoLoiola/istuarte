@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Calendar extends Component{
+class Agenda extends Component{
     render(){
         return(
             <div>
-                Calendar
+                Agenda
             </div>
         )
     }
 }
 
-export default Calendar;
+export default Agenda;

@@ -1,13 +1,49 @@
 .ia-contact-us{
     display: block;
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    left: -1920px;
     width: $medium;
     margin: 0 auto;
-    color: $darkBrown;
+    transition: left .4s ease;
 }
+
+.slide-contact-true{
+    left: 0;
+}
+
 .ia-contact-us-container-grid{
+    display: block;
+    margin-top: 20px;
     margin-bottom: 20px;
-    padding:20px;
+    padding:20px 20px 10px 20px; 
     border: 1px solid $lightBrown;
     background: $clrBrown;
     color: $darkBrown;
+}
+
+.ia-contact-us-input{
+    label{
+        display: block;
+        width: 100%;
+    }
+}
+
+.ia-contact-us-submit{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.ia-contact-us-submit:active{
+    color: $clrWhite;
+    background: $darkBrown;
+}
+
+
+.ia-contact-us .about-us{
+    display: block;
+    padding-bottom: 10px;
+    font-size: $mediumFont;
+    font-weight: bold;
+    cursor: pointer;
 }

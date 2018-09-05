@@ -19,7 +19,8 @@ class OutlinedButton extends Component {
         cursor: pointer
         `
         return(
-            <Input 
+            <Input
+                className = { this.props.className }
                 value = 'submit'
                 center = { this.props.center }
                 right = { this.props.right }
