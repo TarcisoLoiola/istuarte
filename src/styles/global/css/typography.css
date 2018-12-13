@@ -1,0 +1,51 @@
+@import './colors.css';
+
+
+h1, h2, h3, h4 {
+    font-family: 'Poiret One', cursive;
+    /* font-family: 'Acumin Pro', Helvetica, Arial, sans-serif; */
+    margin: 0;
+}
+
+html {
+    font-size: 80%;
+}
+
+body, a {
+    font-family: 'Poiret One', cursive;
+    /* font-family: 'Acumin Pro', Helvetica, Arial, Helvetica, sans-serif; */
+    color: var(--darkerGrey);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+    body, a {
+    font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 820px) {
+    body, a {    
+        font-size: 2.2rem;
+
+    }
+}
+
+@media (max-width: 819px) and (min-width: 768px) {
+    body, a {
+    font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 425px) {
+    body, a {
+    font-size: 2.2rem;        
+    }
+}
+
+@media (max-width: 424px) {
+    body, a {
+        font-size: 2.2rem;
+    }
+}

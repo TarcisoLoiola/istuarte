@@ -1,37 +1,71 @@
 .ia-subheadernav-container-grid{
     display: grid;
-    grid-template-columns: repeat(6, auto );
-    grid-template-rows: repeat(auto);
-    padding-top: 20px;
-    
+    grid-template-columns: repeat(6, 15.5% );
+    grid-gap: 20px;
+    background: $darkGrey;
+    text-align: center;
+    align-content: center;
+    height: 70px;
+    margin-bottom: 30px;
+    transition: color .3s linear;
+
+    @include mobileL {
+        display: flex;
+    }
+
+    @include mobile {
+        display: flex;
+    }
 }
 
 .ia-subheadernav-menu-list{
     justify-self: center;
     font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    align-self: center;
+    padding: 32px 0 4px 0;
+    color: $clrWhite;
+    transition:  color .3s linear, background .3s linear;
 }
 
 .ia-subheadernav-menu-list > a{
-    color: $darkBrown;
-    text-decoration-line: none;
+    display: block;
+    color: $clrWhite;
+    width: 100%;
+    height: 100%;
+    transition: color .2s linear, background .3s linear;
 }
 
-.ia-subheadernav-menu-container .home{
-    grid-column: 1;
-    grid-row: 1;
+.ia-subheadernav-menu-list:hover{
+    color: $darkGrey;
+    background: linear-gradient($clrWhite, $clrWhite, $lightGrey);;
+    box-shadow: 0 0 5px $darkGrey;
+
+    a{
+        color: $darkGrey;
+    }
 }
 
-.ia-subheadernav-menu-container .team{
-    grid-column: 2;
-    grid-row: 1;
-}
 
-.ia-subheadernav-menu-container .calendar{
-    grid-column: 3;
-    grid-row: 1;
-}
 
-.ia-subheadernav-menu-container .about-us{
-    grid-column: 4;
-    grid-row: 1;
-}
+// .ia-subheadernav-menu-container .home{
+//     grid-column: 1;
+//     grid-row: 1;
+// }
+
+// .ia-subheadernav-menu-container .team{
+//     grid-column: 2;
+//     grid-row: 1;
+// }
+
+// .ia-subheadernav-menu-container .calendar{
+//     grid-column: 3;
+//     grid-row: 1;
+// }
+
+// .ia-subheadernav-menu-container .about-us{
+//     grid-column: 4;
+//     grid-row: 1;
+// }

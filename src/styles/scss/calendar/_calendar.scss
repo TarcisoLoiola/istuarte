@@ -1,0 +1,56 @@
+.ia-calendar-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.react-calendar {
+    width: 400px;
+}
+.react-calendar__navigation__label {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    font-size: 1.4rem;
+}
+
+.weekdays:hover {
+    background: rgba(2, 145, 255, 0.769);
+}
+
+.weekdays-disable:hover {
+    background: rgba(237, 237, 237, 0.769);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: auto;
+    width: 400px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1px solid
+}
+
+.weekdayHeader {
+    font-weight: 700
+}
+
+.weekdays {
+    cursor: pointer;
+    align-self: center;
+    padding: 15px 0;
+    font-weight: 300
+}
+
+.monthYear {
+    grid-column: 2/7;
+    align-self: center;
+    padding: 30px 0;
+    font-weight: 700
+}

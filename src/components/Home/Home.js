@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-
+import Calendar from '../Calendar/Calendar'
 
 class Home extends Component{
+
+    componentDidMount(){
+        
+    }
+
     render(){
+
         return(
-            <div>
-                Home
+            <div className='ia-home'>
+                <Calendar />
             </div>
         )
     }

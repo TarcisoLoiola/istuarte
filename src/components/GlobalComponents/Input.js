@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import '../../styles/global/css/colors.css'
 
 class Input extends Component {
    
@@ -12,15 +13,15 @@ class Input extends Component {
         text-transform: uppercase
         font-size: 1rem
         outline: none
-        color: #B33F01
-        border: solid 1px #B33F01
+        color: #454545
+        border: solid 1px #454545
         cursor: pointer
         `
         const Label = styled.label`
             display: block; ${ props => props.center ? 'margin: 0 auto;' : props => props.right ? 'float: right' : ''  }
             font-size: 1.4rem
             outline: none
-            color: #B33F01
+            color: #454545
             cursor: pointer
             `
         return(

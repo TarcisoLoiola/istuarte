@@ -3,7 +3,7 @@
     grid-column: 1;
     grid-row: 1;
     position: relative;
-    left: -1920px;
+    left: -1369px;
     width: $medium;
     margin: 0 auto;
     transition: left .4s ease;
@@ -18,9 +18,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding:20px 20px 10px 20px; 
-    border: 1px solid $lightBrown;
-    background: $clrBrown;
-    color: $darkBrown;
+    border: 1px solid $lightGrey;
+    background: $clrWhite;
+    color: $extraDarkGrey;
 }
 
 .ia-contact-us-input{
@@ -36,7 +36,7 @@
 }
 .ia-contact-us-submit:active{
     color: $clrWhite;
-    background: $darkBrown;
+    background: $extraDarkGrey;
 }
 
 

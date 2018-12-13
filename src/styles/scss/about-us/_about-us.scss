@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
+    overflow-x: hidden;
 }
 
 
@@ -17,13 +18,18 @@
 }
 
 .ia-about-us-container-grid{
-    display: block;
+    display: block; 
     margin-top: 20px;
     margin-bottom: 20px;
     padding:0 20px 10px 20px; 
-    border: 1px solid $lightBrown;
-    background: $clrBrown;
-    color: $darkBrown;
+    border: 1px solid $lightGrey;
+    background: $clrWhite;
+    color: $extraDarkGrey;
+
+    @include mobile {
+        height: 390px;
+        overflow-y: scroll;
+    }
     
 }
 
@@ -41,7 +47,7 @@
         display: block;
         padding-bottom: 10px;
         text-decoration-line: none;
-        color: $darkBrown;
+        color: $extraDarkGrey;
         font-size: $mediumFont;
         font-weight: bold;
     }

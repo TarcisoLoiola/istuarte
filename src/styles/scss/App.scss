@@ -1,0 +1,29 @@
+// body{
+//     font-family: 'Poiret One', cursive;
+
+    
+// }
+
+@import './variables';
+// @import '../global/css/colors.css';
+// @import '../global/css//global.css';
+// @import '../global/css/typography.css';
+
+@import './global-styles';
+@import './calendar/calendar';
+@import './header/header';
+@import './header/sub-header-nav';
+
+@import './team/team';
+@import './team/team-card';
+
+@import './about-us/about-us';
+@import './about-us/contact-us';
+
+
+
+@import './home/home';
+
+
+
+@import './agenda/agenda';

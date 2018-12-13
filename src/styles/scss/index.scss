@@ -1,13 +1,13 @@
-body{
-    font-family: 'Poiret One', cursive;
+// body{
+//     font-family: 'Poiret One', cursive;
 
-    hr{
-        border-color: #d5c1b6;
-        background: #d5c1b6;
-    }
-}
+    
+// }
 
 @import './variables';
+@import '../global/css/colors.css';
+@import '../global/css//global.css';
+@import '../global/css/typography.css';
 
 @import './global-styles';
 @import './calendar/calendar';
@@ -19,3 +19,13 @@ body{
 
 @import './about-us/about-us';
 @import './about-us/contact-us';
+
+@import './calendar/calendar';
+
+
+
+@import './home/home';
+
+
+
+@import './agenda/agenda';

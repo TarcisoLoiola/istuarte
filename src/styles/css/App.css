@@ -1,3 +1,308 @@
+.ia-calendar-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+}
 
+.react-calendar {
+  width: 400px;
+}
+
+.react-calendar__navigation__label {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-size: 1.4rem;
+}
+
+.weekdays:hover {
+  background: rgba(2, 145, 255, 0.769);
+}
+
+.weekdays-disable:hover {
+  background: rgba(237, 237, 237, 0.769);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: auto;
+  width: 400px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.weekdayHeader {
+  font-weight: 700;
+}
+
+.weekdays {
+  cursor: pointer;
+  align-self: center;
+  padding: 15px 0;
+  font-weight: 300;
+}
+
+.monthYear {
+  grid-column: 2/7;
+  align-self: center;
+  padding: 30px 0;
+  font-weight: 700;
+}
+
+.ia-header {
+  display: block;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.ia-logo-container-grid {
+  display: grid;
+}
+
+.ia-logo-container {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.ia-logo-container .ia-logo-container-link {
+  color: #454545;
+  font-size: 6rem;
+  text-decoration-line: none;
+}
+
+.ia-subheadernav-container-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 15.5%);
+  grid-gap: 20px;
+  background: #666666;
+  text-align: center;
+  align-content: center;
+  height: 70px;
+  margin-bottom: 30px;
+  transition: color 0.3s linear;
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .ia-subheadernav-container-grid {
+    display: flex;
+  }
+}
+@media (max-width: 424px) {
+  .ia-subheadernav-container-grid {
+    display: flex;
+  }
+}
+
+.ia-subheadernav-menu-list {
+  justify-self: center;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  align-self: center;
+  padding: 32px 0 4px 0;
+  color: #FFFFFF;
+  transition: color 0.3s linear, background 0.3s linear;
+}
+
+.ia-subheadernav-menu-list > a {
+  display: block;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  transition: color 0.2s linear, background 0.3s linear;
+}
+
+.ia-subheadernav-menu-list:hover {
+  color: #666666;
+  background: linear-gradient(#FFFFFF, #FFFFFF, #95989a);
+  box-shadow: 0 0 5px #666666;
+}
+.ia-subheadernav-menu-list:hover a {
+  color: #666666;
+}
+
+.ia-team {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ia-team-container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1);
+  grid-column-gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #454545;
+}
+
+.ia-team-container-card {
+  display: block;
+  padding: 10px;
+  margin: 12px 20px 20px 20px;
+  background: #FFFFFF;
+  border: 1px solid #95989a;
+  border-radius: 10px;
+  box-shadow: 0 0 1px #666666;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ia-team-container-card h3 {
+  margin: 0;
+}
+.ia-team-container-card p {
+  margin: 0;
+}
+.ia-team-container-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px #666666, -1px -1px 5px #666666;
+}
+
+.ia-team-main-container-card {
+  display: block;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.ia-team-container-body {
+  display: block;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #95989a;
+  color: #454545;
+}
+
+.ia-about-contact-grid {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  overflow-x: hidden;
+}
+
+.ia-about-us {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  left: 0;
+  width: 90vw;
+  margin: 0 auto;
+  transition: left 0.4s ease;
+}
+
+.ia-about-us-container-grid {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px 10px 20px;
+  border: 1px solid #95989a;
+  background: #FFFFFF;
+  color: #454545;
+}
+@media (max-width: 424px) {
+  .ia-about-us-container-grid {
+    height: 390px;
+    overflow-y: scroll;
+  }
+}
+
+.slide-about-true {
+  left: 1920px;
+}
+
+.ia-about-us p {
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.ia-about-us a {
+  display: block;
+  padding-bottom: 10px;
+  text-decoration-line: none;
+  color: #454545;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.ia-about-us .contact-us {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ia-contact-us {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  left: -1369px;
+  width: 90vw;
+  margin: 0 auto;
+  transition: left 0.4s ease;
+}
+
+.slide-contact-true {
+  left: 0;
+}
+
+.ia-contact-us-container-grid {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 10px 20px;
+  border: 1px solid #95989a;
+  background: #FFFFFF;
+  color: #454545;
+}
+
+.ia-contact-us-input label {
+  display: block;
+  width: 100%;
+}
+
+.ia-contact-us-submit {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ia-contact-us-submit:active {
+  color: #FFFFFF;
+  background: #454545;
+}
+
+.ia-contact-us .about-us {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ia-home {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ia-agenda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 /*# sourceMappingURL=App.css.map */

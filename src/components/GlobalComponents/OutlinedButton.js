@@ -14,8 +14,8 @@ class OutlinedButton extends Component {
         text-transform: uppercase
         font-size: 1rem
         outline: none
-        color: #B33F01
-        border: solid 1px #B33F01
+        color: #454545
+        border: solid 1px #454545
         cursor: pointer
         `
         return(

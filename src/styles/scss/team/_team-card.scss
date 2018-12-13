@@ -1,19 +1,21 @@
 .ia-team-container-grid{
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1);
     grid-column-gap: 20px;
     padding-top: 10px;
-    color: $darkBrown;
+    padding-bottom: 20px;
+    color: $extraDarkGrey;
 }
 
 .ia-team-container-card{
     display: block;
     padding: 10px;
-    background: $clrBrown;
+    margin: 12px 20px 20px 20px;
+    background: $clrWhite;
     border: 1px solid $lightGrey;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px $darkGrey;
+    box-shadow: 0 0 1px $darkGrey;
     text-align: center;
     cursor: pointer;
 }
@@ -33,17 +35,26 @@
     }
 }
 
-.ia-team-container-card:hover{
-    box-shadow: 1.5px 1.5px 5px $darkGrey;
+.ia-team-main-container-card{
+    display: block;
+    height: 450px;
+    overflow-y: scroll;
 }
 
 .ia-team-container-body{
+
+    // display: grid;
+    // grid-template-columns: repeat(5, auto);
+    // grid-template-rows: repeat(auto);
+    // grid-column-gap: 20px;
+    // padding-top: 10px;
+    // color: $darkBrown;
+
     display: block;
-    grid-column: 1/6;
-    grid-row: 11;
+    // grid-column: 1/6;
+    // grid-row: 11;
     height: 200px;
-    width: 100%;
-    margin-top: 20px;
+    padding: 10px;
     border: 1px solid $lightGrey;
-    
+    color: $extraDarkGrey;
 }

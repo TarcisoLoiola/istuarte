@@ -1,71 +1,138 @@
-body {
-  font-family: "Poiret One", cursive;
+@import '../global/css/colors.css';
+@import '../global/css//global.css';
+@import '../global/css/typography.css';
+.ia-calendar-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
 }
-body hr {
-  border-color: #d5c1b6;
-  background: #d5c1b6;
+
+.react-calendar {
+  width: 400px;
+}
+
+.react-calendar__navigation__label {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-size: 1.4rem;
+}
+
+.weekdays:hover {
+  background: rgba(2, 145, 255, 0.769);
+}
+
+.weekdays-disable:hover {
+  background: rgba(237, 237, 237, 0.769);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: auto;
+  width: 400px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.weekdayHeader {
+  font-weight: 700;
+}
+
+.weekdays {
+  cursor: pointer;
+  align-self: center;
+  padding: 15px 0;
+  font-weight: 300;
+}
+
+.monthYear {
+  grid-column: 2/7;
+  align-self: center;
+  padding: 30px 0;
+  font-weight: 700;
 }
 
 .ia-header {
   display: block;
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
 }
 
-.ia-header-name-container-grid {
+.ia-logo-container-grid {
   display: grid;
 }
 
-.ia-header-name-container {
+.ia-logo-container {
   display: block;
-  grid-column: 1;
-  grid-row: 1;
-  padding-top: 5vh;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
   justify-self: center;
   text-decoration: none;
 }
 
-.ia-header-name-container .ia-header-name-container-link {
-  color: #B33F01;
-  font-size: 2.8rem;
+.ia-logo-container .ia-logo-container-link {
+  color: #454545;
+  font-size: 6rem;
   text-decoration-line: none;
 }
 
 .ia-subheadernav-container-grid {
   display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-template-rows: repeat(auto);
-  padding-top: 20px;
+  grid-template-columns: repeat(6, 15.5%);
+  grid-gap: 20px;
+  background: #666666;
+  text-align: center;
+  align-content: center;
+  height: 70px;
+  margin-bottom: 30px;
+  transition: color 0.3s linear;
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .ia-subheadernav-container-grid {
+    display: flex;
+  }
+}
+@media (max-width: 424px) {
+  .ia-subheadernav-container-grid {
+    display: flex;
+  }
 }
 
 .ia-subheadernav-menu-list {
   justify-self: center;
   font-size: 1.4rem;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  align-self: center;
+  padding: 32px 0 4px 0;
+  color: #FFFFFF;
+  transition: color 0.3s linear, background 0.3s linear;
 }
 
 .ia-subheadernav-menu-list > a {
-  color: #B33F01;
-  text-decoration-line: none;
+  display: block;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  transition: color 0.2s linear, background 0.3s linear;
 }
 
-.ia-subheadernav-menu-container .home {
-  grid-column: 1;
-  grid-row: 1;
+.ia-subheadernav-menu-list:hover {
+  color: #666666;
+  background: linear-gradient(#FFFFFF, #FFFFFF, #95989a);
+  box-shadow: 0 0 5px #666666;
 }
-
-.ia-subheadernav-menu-container .team {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.ia-subheadernav-menu-container .calendar {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.ia-subheadernav-menu-container .about-us {
-  grid-column: 4;
-  grid-row: 1;
+.ia-subheadernav-menu-list:hover a {
+  color: #666666;
 }
 
 .ia-team {
@@ -76,20 +143,22 @@ body hr {
 
 .ia-team-container-grid {
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(auto);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1);
   grid-column-gap: 20px;
   padding-top: 10px;
-  color: #B33F01;
+  padding-bottom: 20px;
+  color: #454545;
 }
 
 .ia-team-container-card {
   display: block;
   padding: 10px;
-  background: #fffbf9;
+  margin: 12px 20px 20px 20px;
+  background: #FFFFFF;
   border: 1px solid #95989a;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px #666666;
+  box-shadow: 0 0 1px #666666;
   text-align: center;
   cursor: pointer;
 }
@@ -107,24 +176,25 @@ body hr {
   box-shadow: 1px 1px 5px #666666, -1px -1px 5px #666666;
 }
 
-.ia-team-container-card:hover {
-  box-shadow: 1.5px 1.5px 5px #666666;
+.ia-team-main-container-card {
+  display: block;
+  height: 450px;
+  overflow-y: scroll;
 }
 
 .ia-team-container-body {
   display: block;
-  grid-column: 1/6;
-  grid-row: 11;
   height: 200px;
-  width: 100%;
-  margin-top: 20px;
+  padding: 10px;
   border: 1px solid #95989a;
+  color: #454545;
 }
 
 .ia-about-contact-grid {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1;
+  overflow-x: hidden;
 }
 
 .ia-about-us {
@@ -143,9 +213,15 @@ body hr {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0 20px 10px 20px;
-  border: 1px solid #d5c1b6;
-  background: #fffbf9;
-  color: #B33F01;
+  border: 1px solid #95989a;
+  background: #FFFFFF;
+  color: #454545;
+}
+@media (max-width: 424px) {
+  .ia-about-us-container-grid {
+    height: 390px;
+    overflow-y: scroll;
+  }
 }
 
 .slide-about-true {
@@ -161,7 +237,7 @@ body hr {
   display: block;
   padding-bottom: 10px;
   text-decoration-line: none;
-  color: #B33F01;
+  color: #454545;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -178,7 +254,7 @@ body hr {
   grid-column: 1;
   grid-row: 1;
   position: relative;
-  left: -1920px;
+  left: -1369px;
   width: 90vw;
   margin: 0 auto;
   transition: left 0.4s ease;
@@ -193,9 +269,9 @@ body hr {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px 20px 10px 20px;
-  border: 1px solid #d5c1b6;
-  background: #fffbf9;
-  color: #B33F01;
+  border: 1px solid #95989a;
+  background: #FFFFFF;
+  color: #454545;
 }
 
 .ia-contact-us-input label {
@@ -210,7 +286,7 @@ body hr {
 
 .ia-contact-us-submit:active {
   color: #FFFFFF;
-  background: #B33F01;
+  background: #454545;
 }
 
 .ia-contact-us .about-us {
@@ -219,6 +295,75 @@ body hr {
   font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.ia-calendar-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.react-calendar {
+  width: 400px;
+}
+
+.react-calendar__navigation__label {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-size: 1.4rem;
+}
+
+.weekdays:hover {
+  background: rgba(2, 145, 255, 0.769);
+}
+
+.weekdays-disable:hover {
+  background: rgba(237, 237, 237, 0.769);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: auto;
+  width: 400px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.weekdayHeader {
+  font-weight: 700;
+}
+
+.weekdays {
+  cursor: pointer;
+  align-self: center;
+  padding: 15px 0;
+  font-weight: 300;
+}
+
+.monthYear {
+  grid-column: 2/7;
+  align-self: center;
+  padding: 30px 0;
+  font-weight: 700;
+}
+
+.ia-home {
+  display: block;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.ia-agenda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /*# sourceMappingURL=index.css.map */
