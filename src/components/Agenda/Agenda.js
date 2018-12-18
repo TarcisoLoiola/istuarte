@@ -5,54 +5,49 @@ import moment from 'moment'
 
 // import Schedule from '.././../utilities/agenda.json'
 
-import AgendaStore from '../../store/AgendaStore';
+// import AgendaStore from '../../store/AgendaStore';
 
-class Agenda extends Component{
+class Agenda extends Component {
     constructor(props){
-        super(props)
-        this.state={
+        super(props),
+        this.state = {
             date: moment(),
-            agenda: {},
-            professional: 'Tarciso'
+            agenda: [],
+            // professional: 'Tarciso'
         }
-        this.handleChange=this.handleChange.bind(this)
-        this.getSchedule=this.getSchedule.bind(this)
-    }
-
-    componentDidMount(){
-
-        const storeState = AgendaStore.getState();
-        this.setState({ agenda: storeState });
-        AgendaStore.dispatch({ type: 'PROFESSIONAL', value: this.state.professional })
-    }
-
-    getSchedule(){
-        let newState = this.state
-        // let formatedDate = moment(newState.date).format("DD/MM/YYYY")
-        let todays = []
-        for(let i = 0; i < newState.schedule.length; i+=1 ){
-            console.log(newState.schedule[i].date)
-            console.log(newState.date)
-
-            if(newState.schedule[i].date === newState.date){
-                todays.push(newState.schedule[i])
-            } 
-        }
-        console.log(todays)
     }
     
 
-    handleChange(date){
-        let newState = this.state
-        newState.date = date
-        this.setState( newState )
+    componentDidMount() {
+
+        // const storeState = AgendaStore.getState();
+        // this.setState({ agenda: storeState });
+        // AgendaStore.dispatch({ type: 'PROFESSIONAL', value: this.state.professional })
     }
 
-    render(){
+    render() {
         // console.log(Schedule)
-        return(
+        return (
             <div className='ia-agenda'>
-                Agenda
+                    <div className='ia-agenda-time'>8:00</div>
+                    <div className='ia-agenda-time'>8:40</div>
+                    <div className='ia-agenda-time'>9:20</div>
+                    <div className='ia-agenda-time'>10:00</div>
+                    <div className='ia-agenda-time'>10:40</div>
+                    <div className='ia-agenda-time'>11:20</div>
+                    <div className='ia-agenda-time'>12:00</div>
+                    <div className='ia-agenda-time'>12:40</div>
+                    <div className='ia-agenda-time'>13:20</div>
+                    <div className='ia-agenda-time'>14:00</div>
+                    <div className='ia-agenda-time'>14:40</div>
+                    <div className='ia-agenda-time'>15:20</div>
+                    <div className='ia-agenda-time'>16:00</div>
+                    <div className='ia-agenda-time'>16:40</div>
+                    <div className='ia-agenda-time'>17:20</div>
+                    <div className='ia-agenda-time'>18:00</div>
+                    <div className='ia-agenda-time'>18:40</div>
+                    <div className='ia-agenda-time'>19:20</div>
+                    <div className='ia-agenda-time'>20:00</div>
             </div>
         )
     }

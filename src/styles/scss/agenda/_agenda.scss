@@ -1,6 +1,19 @@
-.ia-agenda{
+.ia-agenda {
     display: grid;
+    width: 380px;
+    margin: auto;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+}
+
+.ia-agenda-time {
+    margin: 2px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    background: $success;
 }
 
 // .datePicker{

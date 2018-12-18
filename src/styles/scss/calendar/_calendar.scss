@@ -1,15 +1,16 @@
 .ia-calendar-wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
+    margin-top: 10px;
 }
 
 .react-calendar {
-    width: 400px;
+    width: 380px;
 }
 .react-calendar__navigation__label {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
 }
 
@@ -17,24 +18,34 @@
     font-size: 1.4rem;
 }
 
-.weekdays:hover {
+.activeStyle {
     background: rgba(2, 145, 255, 0.769);
 }
 
-.weekdays-disable:hover {
-    background: rgba(237, 237, 237, 0.769);
+.weekdays-hover:hover {
+    cursor: pointer;
+    // background: rgba(2, 145, 255, 0.769);
+}
+
+.weekdays-disable:hover {    
+    background: rgba($clrGrey, 0.769);
+}
+
+.disabled-days {
+    background: rgba($clrGrey, 0.769);
+    font-weight: 300;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     height: auto;
-    width: 400px;
+    width: 380px;
     font-size: 1.4rem;
     text-align: center;
-    font-weight: 700;
     box-sizing: border-box;
-    border: 1px solid
+    border: 1px solid $clrGrey;
+    box-shadow: 0 4px 100px -13px$mediumGrey;
 }
 
 .weekdayHeader {
@@ -42,15 +53,20 @@
 }
 
 .weekdays {
-    cursor: pointer;
     align-self: center;
-    padding: 15px 0;
-    font-weight: 300
+    padding: 10px 0;
+    margin: 1px;
 }
 
 .monthYear {
     grid-column: 2/7;
     align-self: center;
-    padding: 30px 0;
+    padding: 10px 0 20px 0;
     font-weight: 700
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
